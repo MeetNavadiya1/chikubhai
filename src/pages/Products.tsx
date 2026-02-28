@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle, Droplets } from "lucide-react";
+import { Droplets } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -37,8 +37,8 @@ const Products = () => {
                 key={cat}
                 onClick={() => setActiveCategory(cat as any)}
                 className={`px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${activeCategory === cat
-                    ? "bg-primary text-primary-foreground shadow-lg glow-primary"
-                    : "bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary"
+                  ? "bg-primary text-primary-foreground shadow-lg glow-primary"
+                  : "bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary"
                   }`}
               >
                 {cat}
@@ -51,20 +51,20 @@ const Products = () => {
             {filtered.map((flavor, index) => (
               <figure
                 key={flavor.name}
-                className="group rounded-2xl overflow-hidden flavor-card-hover cursor-pointer border border-border/40 shadow-md bg-card mx-auto w-full max-w-[230px]"
-                style={{ animationDelay: `${index * 30}ms` }}
+                className={`group rounded-2xl overflow-hidden cursor-pointer 
+  border border-border/40 shadow-md bg-card mx-auto w-full max-w-[230px]
+  transition-all duration-500 transform hover:-translate-y-1 hover:shadow-xl`}
               >
-                {/* Increased Height Image Section */}
                 <div className="h-55 flex items-center justify-center">
                   <img
                     src={flavor.image}
-                    alt={flavor.name}
+                    alt={`${flavor.name} Gola Chasani 6L Bulk Syrup`}
                     className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                    loading="lazy"
+                    loading={index < 6 ? "eager" : "lazy"}
+                    decoding="async"
                   />
                 </div>
 
-                {/* Description */}
                 <div className={`${flavor.color} opacity-80 p-4 pt-5 space-y-2 bg-muted/50`}>
                   <div className="flex flex-col lg:flex-row items-center justify-between">
                     <h3 className="font-heading font-bold text-lg text-foreground leading-tight">
@@ -75,7 +75,7 @@ const Products = () => {
                       6L Pack
                     </span>
                   </div>
-                  <figcaption className="text-muted-foreground text-sm text-black leading-relaxed line-clamp-2">
+                  <figcaption className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
                     {flavor.description}
                   </figcaption>
                 </div>
@@ -91,7 +91,7 @@ const Products = () => {
             <p className="text-muted-foreground text-lg mb-8 max-w-lg mx-auto">
               We offer wholesale and distributor pricing. Contact us on WhatsApp for inquiries.
             </p>
-            <a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20inquire%20about%20bulk%20ordering." target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/916359573085?text=Hi!%20I%27d%20like%20to%20inquire%20about%20bulk%20ordering." target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="rounded-full px-8 gap-2 bg-green-500 hover:bg-green-600 text-white glow-hover">
                 <img src={whatsapp} alt="Whatsapp Logo" />
                 Bulk Order Inquiry
