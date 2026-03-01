@@ -39,7 +39,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Chikubhai Sarbatwala" className="h-13 md:h-20 w-auto rounded-lg" />
+          <img src={logo} alt="Chikubhai Sarbatwala" className="h-16 md:h-20 w-auto rounded-lg" />
           <span className="font-heading font-bold text-lg md:text-xl text-foreground hidden sm:block">
             Chikubhai Sarbatwala
           </span>

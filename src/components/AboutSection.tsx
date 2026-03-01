@@ -45,13 +45,13 @@ const AboutSection = () => {
             }`}
         >
           <h2 className="font-heading font-bold text-3xl md:text-5xl mb-6 text-foreground">
-            The <span className="text-gradient">Taste</span> of Gujarat
+            The <span className="text-gradient">Taste</span> of Gujarat for Entire <span className="text-gradient">India</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Chikubhai Sarbatwala is a trusted name in premium gola chasani manufacturing.
             From the vibrant streets of Ahmedabad, we bring you 90+ authentic flavored syrups
             that make every baraf gola unforgettable. Pure ingredients, bold flavors,
-            and unmatched consistency — that's our promise.
+            and unmatched consistency, that's our promise.
           </p>
         </div>
 

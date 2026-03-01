@@ -16,7 +16,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Premium gola chasani manufacturer from Ahmedabad. 90+ vibrant flavors in 6-liter bulk cans.
+              Premium gola chasani manufacturer from Ahmedabad. 90+ vibrant flavors in 6 liter bulk cans.
             </p>
             <a
               href="https://www.instagram.com/chikubhai_sharbatwala/"
