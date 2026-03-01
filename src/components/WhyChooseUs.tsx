@@ -5,7 +5,7 @@ const features = [
   {
     icon: Sparkles,
     title: "High Quality Ingredients",
-    description: "Every syrup is crafted with premium, food-grade ingredients for the purest taste experience.",
+    description: "Every syrup is crafted with premium, food grade ingredients for the purest taste experience.",
     gradient: "from-yellow-400/20 to-orange-400/20",
   },
   {
@@ -17,7 +17,7 @@ const features = [
   {
     icon: Package,
     title: "Bulk Supply Ready",
-    description: "6-liter cans designed for vendors, distributors, and high-volume businesses.",
+    description: "6-liter cans designed for vendors, distributors, and high volume businesses.",
     gradient: "from-blue-400/20 to-indigo-400/20",
   },
   {
