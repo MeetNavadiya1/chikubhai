@@ -28,7 +28,7 @@ const BulkPackaging = () => {
                   </h2>
                   <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
                     Designed for distributors, wholesalers, and gola vendors. 
-                    Our 6-liter cans are the perfect size for high-volume businesses — 
+                    Our 6-liter cans are the perfect size for high-volume businesses,
                     cost-effective, long-lasting, and available in all 90+ flavors.
                   </p>
 
@@ -36,7 +36,7 @@ const BulkPackaging = () => {
                     {[
                       "Wholesale & distributor pricing",
                       "All 90+ flavors available in bulk",
-                      "Fast delivery across Gujarat",
+                      "Fast delivery across India",
                       "Consistent quality in every can",
                     ].map((item) => (
                       <li key={item} className="flex items-center gap-3 text-foreground">
